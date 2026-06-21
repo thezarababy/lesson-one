@@ -7,6 +7,11 @@
     "icon": "./assets/images/icon.png",
     "scheme": "lessonone",
     "userInterfaceStyle": "automatic",
+    "splash":{
+"image":"./assets/images/coffee.png",
+"resizeMode":"cover",
+"backgroundColor":"#000000"
+    },
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
