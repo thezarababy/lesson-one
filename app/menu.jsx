@@ -5,7 +5,7 @@ import MenuImages from '@/constants/MenuImages'
 
 export default function MenuScreen(){
      const colorScheme = Appearance.getColorScheme()
-      const theme= colorScheme==='dark' ? Colors.dark: Colors.light;
+      const theme= colorScheme=== 'dark' ? Colors.dark: Colors.light;
 const styles= createStyles(theme,colorScheme)
 const Container= Platform.OS==='web' ? ScrollView: SafeAreaContext;
 const seperatorComp=<View style={styles.seperator}/>
@@ -51,14 +51,14 @@ return(
       },
       seperator:{
          height:1,
-         backgroundColor:colorScheme==='dark'?'papayawhip' : '#000',
+         backgroundColor:colorScheme ==='dark'?'papayawhip' : '#000',
          width:'100%',
          maxWidth:300,
          marginHorizontal:'auto',
          marginBottom: 20,
       },
       footerComp:{
-         
+
          marginHorizontal:'auto',
       },
       row:{

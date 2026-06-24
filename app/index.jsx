@@ -9,11 +9,15 @@ const index = () => {
   return (
     <View style={styles.container}>
       <ImageBackground source={coffeeOne}
-      resizeMode='cover'
+      contentFit='cover'
       style={styles.image}>
         <Text style={styles.title}>coffee shop</Text>
 
-        <Link href="/contact" style={{marginHorizontal:'auto'}} asChild><Pressable style={styles.button}>
+        <Link href="/menu" style={{marginHorizontal:'auto'}} asChild><Pressable style={styles.button}>
+          <Text style={styles.buttonText}>Our Menu</Text>
+          </Pressable>
+          </Link>
+           <Link href="/contact" style={{marginHorizontal:'auto'}} asChild><Pressable style={styles.button}>
           <Text style={styles.buttonText}>contact us</Text>
           </Pressable>
           </Link>
@@ -53,10 +57,12 @@ padding:4,
   },
   button:{
     height:60,
+    width:150,
     borderRadius:20,
     backgroundColor:'rgba(0,0,0,0.75)',
     justifyContent:'center',
     padding:6,
+    marginBottom:50,
   },
   buttonText:{
   color: 'brown',
